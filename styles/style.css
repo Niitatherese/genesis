@@ -82,7 +82,7 @@ nav ul {
 
 /* Grid images */
 
-.grid-container {
+ .grid-container {
     max-width: 1110px;
     max-height: 2200px;
     
@@ -91,26 +91,22 @@ nav ul {
 
 .grid-container-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    max-height: 2000px;
-    gap: 15px 15px;
-    
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
   }
-  .image1 { grid-area: 1 / 1 / 7 / 5; }
-  .image2 { grid-area: 7 / 1 / 14 / 5; }
-  .image3 { grid-area: 14 / 1 / 21 / 5; }
-  .image4 { grid-area: 21 / 1 / 28 / 5; }
-  .image5 { grid-area: 1 / 5 / 6 / 9; }
-  .image6 { grid-area: 6 / 5 / 12 / 9; }
-  .image7 { grid-area: 12 / 5 / 20 / 9; }
-  .image8 { grid-area: 20 / 5 / 28 / 9; }
-  .image9 { grid-area: 1 / 9 / 10 / 13; }
-  .image10 { grid-area: 10 / 9 / 16 / 13; }
-  .image11 { grid-area: 16 / 9 / 23 / 13; }
-  .image12 { grid-area: 24 / 9 / 28 / 13; }
-
-
+  .image1 { grid-area: 1 / 1 / 8 / 4; }
+  .image2 { grid-area: 8 / 1 / 16 / 4; }
+  .image3 { grid-area: 16 / 1 / 24 / 4; }
+  .image4 { grid-area: 24 / 1 / 33 / 4; }
+  .image5 { grid-area: 1 / 4 / 7 / 7; }
+  .image6 { grid-area: 7 / 4 / 14 / 7; }
+  .image7 { grid-area: 14 / 4 / 23 / 7; }
+  .image8 { grid-area: 23 / 4 / 33 / 7; }
+  .image9 { grid-area: 1 / 7 / 11 / 10; }
+  .image10 { grid-area: 11 / 7 / 18 / 10; }
+  .image11 { grid-area: 18 / 7 / 27 / 10; }
+  .image12 { grid-area: 27 / 7 / 33 / 10; }
 
 
         /* Text area */
@@ -134,7 +130,11 @@ nav ul {
     color: #111111;
  }
 
- 
+ a {
+     text-decoration: none;
+     color: #111111;
+ }
+
  .list1 {
     font-family: "Mulish", sans-serif;
     font-style: normal;
@@ -211,3 +211,212 @@ nav ul {
      opacity: 0.6;
      text-decoration: none; 
  }
+
+
+
+ /* Awards */
+
+/* Solid border */
+hr.solid {
+    border-top: 2px solid #D8D8D8;
+    margin-top: 100px;
+  }
+
+
+ /*.awards-container {
+    margin-top: 100px;
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(6, 100px);
+    background-color: #4A4FF2;
+ }
+    */
+     
+ 
+ .grid-container-award {
+    display: grid;
+    margin-top: 50px;
+    max-width: 1110px;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(7, 100px);
+    gap: 0px 0px;
+    grid-template-areas:
+      "text-1 . . . text2 text2 text3 text3 . text4"
+      ". . . . . . text3 text3 . ."
+      ". . . . text5 text5 text6 text6 text6 text7"
+      ". . . . . . . . . ."
+      "text8 text8 . . text9 text9 text10 text10 text10 text11"
+      ". . . . text12 text12 text13 text13 . text14"
+      ". . . . . . text13 text13 . .";
+  }
+  .text-1 { 
+    grid-area: text-1; 
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #111111;
+    }
+  .text3 {
+    grid-area: text3; 
+
+    }
+  .text4 { 
+    grid-area: text4;
+
+    }
+  .text2 { 
+    grid-area: text2; 
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111111;
+
+    }
+  .text5 { 
+    grid-area: text5;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111111;
+    }
+  .text6 { 
+    grid-area: text6; 
+
+    }
+  .text7 { 
+    grid-area: text7; 
+
+    }
+  .text8 { 
+    grid-area: text8; 
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #111111;
+    }
+  .text9 { 
+    grid-area: text9; 
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111111;
+    }
+  .text10 { 
+    grid-area: text10;
+
+    }
+  .text11 { 
+    grid-area: text11;
+
+    }
+  .text12 { 
+    grid-area: text12;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111111; 
+    }
+  .text13 {
+       grid-area: text13; 
+    }
+  .text14 { 
+      grid-area: text14; 
+    }
+
+
+.headline {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+}
+
+.award-text {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.year {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+}
+
+hr.solid1 {
+    border-top: 2px solid #D8D8D8;
+    margin-top: 57px;
+    margin-bottom: 115px;
+  }
+
+        /*Footer*/
+
+  .footer-container {
+    max-width: 1110px;
+  }
+
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Logo-img . . . link1 link2 logos . . .";
+  }
+  .Logo-img { 
+    grid-area: Logo-img; 
+    }
+  .link1 { 
+    grid-area: link1; 
+    margin-left: 200px;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.346154px;
+    color: #111111;
+    }
+
+  .link2 { 
+    grid-area: link2;
+    margin-left: 180px;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.346154px;
+    color: #111111;
+        
+}
+  .logos { 
+    grid-area: logos;
+    margin-left: 200px;
+    width: 95px;
+    height: 15px;
+    
+}
