@@ -11,6 +11,7 @@ body {
     max-width: 1109px;
     justify-content: space-between;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -29,6 +30,9 @@ nav ul {
     font-size: 18px;
     color: #111111;
     list-style: none;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
     
 }
 

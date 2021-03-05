@@ -1,0 +1,128 @@
+body {
+    margin: 30px 50px 50px;
+    max-width: 1360px;
+}    
+        
+        
+        
+        /* Navigation */ 
+
+           .nav-container {
+            margin: 20px 20px 20px;
+            display: flex;
+            max-width: 1109px;
+            justify-content: space-between;
+        }
+        a {
+            text-decoration: none;
+            color: #111111;
+            font-family: 'Mulish', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: -0.346154px;
+            color: #111111;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        nav ul {
+            display: flex;
+            align-items: center;
+            margin-right: 125px;
+        }
+        
+        .nav-items li {
+            list-style: none;
+            margin-right: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #111111;
+            list-style: none;
+            
+        }
+
+
+                /*Container 1 */
+
+.container1 {
+    max-width: 635px;
+    margin-top: 100px;
+    float: left;
+}
+
+.container1 h2 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    color: #111111;
+}
+
+.container1 p {
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #111111;  
+}
+
+.container2 {
+    max-width: 335px;
+    margin-top: 100px;
+    float: right;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 15px 0px;
+    
+    grid-template-areas:
+      "text1 . text2 ."
+      "text3 . text4 ."
+      "text5 . text6 ."
+      "text7 . text8 ."
+      "text9 . text10 ."
+      "text11 . text12 .";
+  }
+  .text1 { grid-area: text1; }
+  .text2 { grid-area: text2; }
+  .text3 { grid-area: text3; }
+  .text4 { grid-area: text4; }
+  .text5 { grid-area: text5; }
+  .text6 { grid-area: text6; }
+  .text7 { grid-area: text7; }
+  .text8 { grid-area: text8; }
+  .text9 { grid-area: text9; }
+  .text10 { grid-area: text10; }
+  .text11 { grid-area: text11; }
+  .text12 { grid-area: text12; }
+
+
+  .left {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.5;  
+  }
+
+  .right {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111111;
+  }
+
